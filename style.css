@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    overflow: hidden;
+}
+
+/* Background Animation */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Floating Mathematical Symbols */
+.math-symbol {
+    position: absolute;
+    font-size: 70px; /* Increased font size */
+    color: #39FF14; /* Neon green color */
+    opacity: 0.8; /* Increased opacity */
+    text-shadow: 0 0 10px #39FF14; /* Added shadow for visibility */
+    animation: float 10s infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header h1 span {
+    color: #00c6ff;
+    text-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #ddd;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #00c6ff;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00c6ff;
+}
+
+/* General Form Styling */
+form label {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+form select {
+    margin-top: 5px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    background: #333;
+    color: white;
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #00c6ff;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00c6ff;
+}
+
+/* Question List */
+#questionsContainer {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: rgb(255, 235, 18, 0.7);
+    border-radius: 10px;
+    text-align: left;
+}
+
+#questionsContainer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#questionsContainer ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #f700ff;
+}
